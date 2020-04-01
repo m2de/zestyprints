@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
     min-height: -moz-available; /* WebKit-based browsers will ignore this. */
     min-height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
     min-height: fill-available;
-    ${tw`flex flex-col w-screen h-full justify-between items-center`}
+    ${tw`flex flex-col w-screen min-h-full justify-between items-center`}
   `
 
   return (
