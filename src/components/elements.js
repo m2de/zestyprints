@@ -1,7 +1,7 @@
 import tw from 'tailwind.macro'
 import styled from "@emotion/styled"
 
-export const Top = tw.div`w-full flex justify-center p-8 text-4xl`
+export const Top = tw.h1`w-full flex justify-center p-8 text-4xl`
 export const Bottom = tw.div`w-full flex justify-center p-8 text-xl`
 export const Middle = tw.div`w-full flex justify-between items-center text-xl`
 export const Square = styled.div`
