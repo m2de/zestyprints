@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import styled from '@emotion/styled'
 import tw from 'tailwind.macro'
 import { Link } from 'gatsby'
 
@@ -26,7 +27,10 @@ const Layout = ({ children }) => {
     }
   `)
 
-  const Wrapper = tw.div`flex flex-col w-screen h-screen justify-between items-center`
+  const Wrapper = styled.div`
+    min-height: -webkit-fill-available;
+    ${tw`flex flex-col w-screen min-h-screen justify-between items-center`}
+  `
 
   return (
     <Wrapper>
