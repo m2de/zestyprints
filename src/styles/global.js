@@ -3,6 +3,6 @@ import tw from 'tailwind.macro'
 
 export const Body = css`
     body {
-        ${tw`font-body w-screen h-screen flex flex-col items-center justify-center`}
+        ${tw`font-body w-full h-full flex flex-col items-center justify-center`}
     }
 `
