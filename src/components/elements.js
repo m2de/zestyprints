@@ -18,7 +18,7 @@ export const Square = styled.div`
 export const Vertical = styled.div`
   writing-mode: vertical-lr;
   text-orientation: upright;
-  ${tw`p-4`}
+  ${tw`p-4 tracking-tightest`}
 `
 
 export default {
