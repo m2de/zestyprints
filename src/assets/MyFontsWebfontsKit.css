@@ -1,0 +1,29 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3882978, 2020-03-24T05:20:52-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: SofiaPro-Medium by Mostardesign
+ * URL: https://www.myfonts.com/fonts/mostardesign/sofia-pro/medium/
+ * Copyright: Copyright &amp;#x00A9; Olivier Gourvat - Mostardesign Type Foundry, 2019. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2020 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3b3fe2");
+  
+@font-face {
+  src: url('webFonts/SofiaPro-Medium/font.eot');
+  font-family: 'SofiaPro-Medium';
+  src: url('webFonts/SofiaPro-Medium/font.woff2') format('woff2'), url('webFonts/SofiaPro-Medium/font.woff') format('woff'), url('webFonts/SofiaPro-Medium/font.eot?#iefix') format('embedded-opentype'), url('webFonts/SofiaPro-Medium/font.ttf') format('truetype');
+}
+

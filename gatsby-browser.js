@@ -1,3 +1,6 @@
+import './src/styles/global.css'
+import './src/assets/MyFontsWebfontsKit.css'
+
 /**
  * Implement Gatsby's Browser APIs in this file.
  *

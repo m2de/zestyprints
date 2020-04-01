@@ -8,9 +8,12 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import tw from 'tailwind.macro'
+import { Link } from 'gatsby'
 
-import Header from "./header"
-import "./layout.css"
+import { Global } from "@emotion/core"
+import { Body } from '../styles/global'
+import { Top, Bottom, Middle, Vertical, Square } from '../components/elements'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -23,24 +26,21 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const Wrapper = tw.div`flex flex-col w-screen h-screen justify-between items-center`
+
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
-    </>
+    <Wrapper>
+      <Global styles={Body}></Global>
+      <Top><Link to="/">zestyprints</Link></Top>
+      <Middle>
+        <Vertical><Link to="shop">shop</Link></Vertical>
+        <Square>{children}</Square>
+        <Vertical><Link to="info">info</Link></Vertical>
+      </Middle>
+      <Bottom>
+        <a href="https://www.instagram.com/zestyprints/">instagram</a>
+      </Bottom>
+    </Wrapper>
   )
 }
 

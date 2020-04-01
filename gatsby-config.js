@@ -1,10 +1,18 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `zestyprints`,
+    description: `We create minimal modern prints and wall art that brighten up your living space and your mind.`,
+    author: `@zestyprints`,
   },
   plugins: [
+    `gatsby-plugin-emotion`,
+    `gatsby-plugin-postcss`,
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `zestyprints`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
