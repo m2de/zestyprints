@@ -38,9 +38,9 @@ const images = instagram.allInstaNode.edges.map(({node}) => (
 
 const settings = {
   arrows: false,
-  dots: true,
+  dots: false,
   infinite: true,
-  speed: 500,
+  speed: 0,
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true
