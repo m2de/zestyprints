@@ -28,8 +28,10 @@ const Layout = ({ children }) => {
   `)
 
   const Wrapper = styled.div`
-    min-height: -webkit-fill-available;
-    ${tw`flex flex-col w-screen min-h-screen justify-between items-center`}
+    min-height: -moz-available; /* WebKit-based browsers will ignore this. */
+    min-height: -webkit-fill-available; /* Mozilla-based browsers will ignore this. */
+    min-height: fill-available;
+    ${tw`flex flex-col w-screen justify-between items-center`}
   `
 
   return (
