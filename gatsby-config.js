@@ -26,12 +26,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `zestyprints`,
         short_name: `zestyprints`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#000000`,
-        display: `minimal-ui`,
+        display: `standalone`,
         icon: `src/assets/zestyprintsicon.svg`, // This path is relative to the root of the site.
       },
     },
