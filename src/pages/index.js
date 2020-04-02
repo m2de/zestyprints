@@ -22,7 +22,7 @@ const IndexPage = () => {
           localFile {
             childImageSharp {
               fluid(maxWidth: 450, maxHeight: 450) {
-                ...GatsbyImageSharpFluid
+                ...GatsbyImageSharpFluid_noBase64
               }
             }
           }
@@ -33,7 +33,7 @@ const IndexPage = () => {
 `)
 
 const images = instagram.allInstaNode.edges.map(({node}) => (
-  <a href={`https://instagram.com/p/${node.id}`}><Img fluid={node.localFile.childImageSharp.fluid} /></a>
+  <a href={`https://instagram.com/p/${node.id}`}><Img loading="eager" critical fadeIn="false" fluid={node.localFile.childImageSharp.fluid} /></a>
 ))
 
 const settings = {
@@ -43,7 +43,9 @@ const settings = {
   speed: 0,
   slidesToShow: 1,
   slidesToScroll: 1,
-  autoplay: true
+  autoplay: true,
+  fade: false,
+  lazyLoad: 'ondemand',
 }
 
   return (
